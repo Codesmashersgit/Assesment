@@ -435,7 +435,7 @@ body {
         flex-direction: column;
         text-align: center;
         padding-top: 5px; /* Added top padding, removed horizontal */
-        min-height:100vh; /* Use min-height */
+        max-height:98vh; /* Use min-height */
         height: auto; /* Let content define height */
         position: relative;
     }
@@ -493,20 +493,22 @@ body {
     .right-container img:nth-child(1) {
         height: 220px; 
         z-index: 1;
+        margin-top: 30px;
+        
     }
 
     /* Ellipse 5.png - middle */
     .right-container img:nth-child(2) {
         height: 180px;
         z-index: 2;
-        margin-top: -18px;
+        margin-top: 18px;
     }
 
     /* lady-image - main image */
     .right-container img:nth-child(3) {
-        height: 240px;
+        height: 250px;
         z-index: 3;
-        margin-top: 25px;
+        margin-top: 40px;
     }
 
     /* Hide the floating boxes on mobile */
