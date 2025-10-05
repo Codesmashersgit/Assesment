@@ -85,7 +85,7 @@ body {
 .hero .left-container {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     padding: 120px 80px;
 }
 .link button {
@@ -110,14 +110,14 @@ body {
 /* Absolute positioning for vector lines */
 .hero .left-container #text1 span img:nth-child(1) {
     position: absolute;
-    top: 43%;
+    top: 45.2%;
     left: 7%;
     height: auto; /* Resetting size properties that may have been inherited/overwritten */
     width: auto;
 }
 .hero .left-container #text1 span img:nth-child(2) {
     position: absolute;
-    top: 44%;
+    top: 46.3%;
     left: 5%;
     height: auto; /* Resetting size properties that may have been inherited/overwritten */
     width: auto;
@@ -331,7 +331,7 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 3px 10px;
-        height: 60px; /* Increased height slightly */
+        height: 38px;
     }
     
     .navbar-inner i {
@@ -342,13 +342,13 @@ body {
     }
 
     .logo-container img {
-        height: 34px;
+        height: 30px;
     }
     .logo-name {
         padding-top: 2px;
     }
     .logo-name img {
-        height: 12px;
+        height: 10px;
     }
 
     .navbar-inner > button {
@@ -418,15 +418,17 @@ body {
 
     #menuIcon {
         z-index: 1001;
+        font-size: 18px;
     }
 
     #closeIcon {
         display: none;
         position: fixed;
-        right: 20px;
-        top: 20px;
+        right: 13px;
+        top: 13px;
         color: #fa1239;
         z-index: 1001;
+        font-size: 18px;
     }
 
 
