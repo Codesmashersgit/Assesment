@@ -6,7 +6,6 @@
 
 body {
     font-family: "Figtree", sans-serif;
-    /* Uncommented to prevent horizontal scroll on smaller screens */
     overflow-x: hidden; 
 }
 
@@ -80,7 +79,6 @@ body {
     align-items: center;
     background: linear-gradient(135deg, #ffd8de, #ffe3e8);
     height: 90vh;
-     /* Added padding to top for better spacing */
 }
 .hero .left-container {
     display: flex;
@@ -107,19 +105,18 @@ body {
     font-weight: lighter;
     line-height: 30px;
 }
-/* Absolute positioning for vector lines */
 .hero .left-container #text1 span img:nth-child(1) {
     position: absolute;
     top: 45.2%;
     left: 7%;
-    height: auto; /* Resetting size properties that may have been inherited/overwritten */
+    height: auto;
     width: auto;
 }
 .hero .left-container #text1 span img:nth-child(2) {
     position: absolute;
     top: 46.3%;
     left: 5%;
-    height: auto; /* Resetting size properties that may have been inherited/overwritten */
+    height: auto;
     width: auto;
 }
 
@@ -140,7 +137,7 @@ body {
     border: 1px solid #fa1239;
     color: #fa1239;
     box-shadow: 0 0 8px #fa1239;
-    background: white; /* Added white background for consistency */
+    background: white; 
 }
 .hero .left-container #btn2 {
     border: 1px solid #fa1239;
@@ -148,10 +145,8 @@ body {
     box-shadow: 0 0 8px #fa1239;
     background: #fa1239;
 }
-
-/* Right Container (Desktop Image Stack) */
 .right-container {
-    position: relative; /* Essential for absolute children */
+    position: relative; 
     width: 50%;
     height: 100%;
 }
@@ -264,9 +259,8 @@ body {
     width: max-content;
 }
 .first-para {
-    /* Changed fixed width to max-width for responsiveness */
     max-width: 1240px; 
-    padding: 0 20px; /* Added horizontal padding */
+    padding: 0 20px; 
 }
 .first-para p {
     font-size: 48px;
@@ -280,11 +274,11 @@ body {
 }
 
 .container {
-    padding: 50px 20px 50px 20px; /* Added padding to edges */
+    padding: 50px 20px 50px 20px; 
     display: flex;
     gap: 24px;
     justify-content: center;
-    flex-wrap: wrap; /* Added for tablet/small desktop wrapping */
+    flex-wrap: wrap; 
 }
 
 .container1 {
@@ -312,7 +306,7 @@ body {
     text-align: center;
     width: 258px;
     line-height: 30px;
-    padding: 20px 0; /* Adjusted padding */
+    padding: 20px 0; 
 }
 .container1 span{
     text-align: center;
@@ -322,9 +316,6 @@ body {
     line-height: 30px;
 }
 
-/* ---------------------------------------------------------------------- */
-/* Mobile Responsiveness (Max Width: 768px) */
-/* ---------------------------------------------------------------------- */
 @media (max-width: 768px) {
     
     .navbar-inner {
@@ -362,7 +353,7 @@ body {
         top: 0;
         right: 0;
         width: 87%;
-        height: 100vh; /* Changed from 110vh to 100vh */
+        height: 100vh; 
         background: linear-gradient(135deg, #ffd8de, #ffe3e8);
         box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
         gap: 50px;
@@ -370,7 +361,7 @@ body {
         transform: translateX(100%);
         z-index: 999;
         padding: 104px 40px;
-        overflow-y: auto; /* Allow scrolling if menu is too long */
+        overflow-y: auto; 
     }
 
     .navbar-inner .link.show {
@@ -431,50 +422,46 @@ body {
         font-size: 18px;
     }
 
-
-    /* Hero Section Mobile Fixes */
     .hero {
         flex-direction: column;
         text-align: center;
-        padding-top: 5px; /* Added top padding, removed horizontal */
-        max-height:98vh; /* Use min-height */
-        height: auto; /* Let content define height */
+        padding-top: 5px; 
+        max-height:98vh;
+        height: auto; 
         position: relative;
     }
 
     .hero .left-container {
         align-items: center;
-        gap: 20px; /* Reduced gap */
-        padding: 0 20px; /* Added horizontal padding for text */
+        gap: 20px; 
+        padding: 0 20px;
     }
 
     .hero .left-container #text1 {
         font-size: 34px;
         font-weight: 800;
         line-height: 42px;
-        width: 100%; /* Use full available width */
+        width: 100%; 
         max-width: 340px; 
     }
 
     .hero .left-container .text2 {
         font-size: 15px;
-        line-height: 26px; /* Adjusted line height */
+        line-height: 26px; 
         width: 100%;
         max-width: 340px;
-        margin-top: 0; /* Adjusted margin */
+        margin-top: 0; 
     }
 
     .hero .btn {
-        flex-direction: column; /* Keep buttons side-by-side if they fit */
+        flex-direction: column; 
     }
     
     .hero .left-container #text1 span img:nth-child(1),
     .hero .left-container #text1 span img:nth-child(2) {
-        display: none; /* Hide the vector lines on mobile */
+        display: none; 
     }
 
-
-    /* Simplified Right Container Image Positioning */
     .right-container {
         position: relative; 
         width: 100%;
@@ -487,11 +474,10 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%); /* Center all images */
+        transform: translate(-50%, -50%);
         height: auto;
     }
 
-    /* Ellipse 6.png - outermost */
     .right-container img:nth-child(1) {
         height: 220px; 
         z-index: 1;
@@ -499,28 +485,20 @@ body {
         
     }
 
-    /* Ellipse 5.png - middle */
     .right-container img:nth-child(2) {
         height: 180px;
         z-index: 2;
         margin-top: 18px;
     }
-
-    /* lady-image - main image */
     .right-container img:nth-child(3) {
         height: 250px;
         z-index: 3;
         margin-top: 40px;
     }
-
-    /* Hide the floating boxes on mobile */
     .right-container .right-box,
     .right-container .left-box {
         display: none;
     }
-
-
-    /* Another Section Mobile Fixes */
     .another-section{
         padding-top: 40px;
     }
@@ -538,14 +516,14 @@ body {
     .another-section .container{
         flex-direction: column;
         align-items: center;
-        gap: 20px; /* Reduced gap between cards */
+        gap: 20px; 
         padding: 20px;
     }
 
     .container .container1{
         width: 100%;
-        max-width: 340px; /* Constrain card width */
-        height: auto; /* Let content define height */
+        max-width: 340px; 
+        height: auto; 
         min-height: 350px;
     }
     
@@ -555,7 +533,7 @@ body {
     }
     
     .container1 .img {
-        height: 100px; /* Reduced image size */
+        height: 100px; 
         width: auto;
     }
 }
