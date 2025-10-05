@@ -78,7 +78,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(135deg, #ffd8de, #ffe3e8);
-  height: 100vh;
+  height: 90vh;
   
 }
 .hero .left-container {
@@ -431,6 +431,7 @@ body {
   align-items: center;
   text-align: center;
   padding: 0;
+  height: 100vh;
 }
 
 .hero .left-container {
@@ -477,7 +478,7 @@ body {
 
   .right-container {
     position: absolute;
-    bottom: 4%;
+    bottom: 12%;
     
 
   }
